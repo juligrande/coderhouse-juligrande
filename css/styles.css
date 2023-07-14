@@ -307,7 +307,7 @@ footer h1{
     display: flex;
     flex-wrap: wrap;
 }
-aside{
+.grabaciones{
     background-color: white;
     flex: 30px;
     padding: 50px;
