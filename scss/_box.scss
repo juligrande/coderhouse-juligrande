@@ -1,0 +1,21 @@
+$relleno-cajitas: 10px;
+$margenes: 50px;
+
+@mixin propiedadesCajas ($relleno, $color, $mw){
+    padding: $relleno;
+    color: $color;
+    max-width: $mw;
+}
+
+@mixin ventajas-contenedor ($flexbox, $direction, $alineacion){
+  display: $flexbox;
+  flex-direction: $direction;
+  align-items: $alineacion;  
+}
+
+$hovers: (
+    sombras: $sombras-ct-hover,
+    transicion: .5s all,
+    transformacion: skew(0deg,2deg)
+);
+

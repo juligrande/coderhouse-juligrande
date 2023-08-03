@@ -1,0 +1,36 @@
+.animation-button-courses {
+
+    animation-name: animation-button-courses;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+
+    @keyframes animation-button-courses {
+        0% {
+            opacity: 0.2;
+        }
+        25% {
+            opacity: 0.4;
+        }
+        50% {
+            opacity: 0.6;
+            background-color: $negro;
+            box-shadow: $sombras-ct;
+            color: $white-ct;
+            border-radius: 40px;
+        }
+        75% {
+            opacity: 0.8;
+            background-color: $negro;
+            box-shadow: $sombras-ct;
+            color: $white-ct;
+            box-shadow: 2px 0px 15px 1px rgb(201, 201, 172);
+        }
+        100% {
+            opacity: 1;
+            background-color: $negro;
+            box-shadow: $sombras-ct;
+            color: $white-ct;
+        }
+    }
+}
