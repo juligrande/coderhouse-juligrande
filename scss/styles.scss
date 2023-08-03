@@ -322,6 +322,20 @@ footer h1{
                     font-size: $font-size-p-sm;
                 }
                         }
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  @media screen and (max-width: 768px) {
+    .nav {
+      display: block;
+    }
+  }
 .PiePagina{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -429,4 +443,54 @@ h1 {
         }
     }
 }
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @media screen and (max-width: 576px) {
+    body {
+      font-size: 14px;
+    }
+  
+    .BarraDeNavegacion .menu {
+      display: block;
+      color: white;
+      font-size: 30px;
+      margin: 10px;
+      order: -1;
+    }
+  
+    .BarraDeNavegacion ul {
+      display: none;
+    }
+  
+    .fondito h1 {
+      font-size: 40px;
+    }
+  
+    .fondito h2 {
+      font-size: 25px;
+    }
+  
+  }
+  @media screen and (min-width: 577px) and (max-width: 992px) {
+    body {
+      font-size: 15px;
+    }
 
+  }
+  
+ @media screen and (min-width: 993px) {
+    body {
+      font-size: 18px;
+    }
+  
+    .formulario {
+      width: 768px;
+      border-radius: 8px;
+    }
+  
+  }
+  
