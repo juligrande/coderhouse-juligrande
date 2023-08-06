@@ -1,0 +1,34 @@
+$primary-color: #007bff;
+$shadow-color: rgba(0, 0, 0, 0.2);
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  border-color:#007bff;
+  box-shadow: 0 2px 4px $shadow-color;
+  overflow: hidden;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 16px;
+
+  .contenido-tarjeta {
+    padding: 16px;
+
+    h3 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #8051ca;
+      line-height: 1.4;
+    }
+    button{
+        @extend .btn;
+    }
+  }
+}
+

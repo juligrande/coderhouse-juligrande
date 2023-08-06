@@ -1,0 +1,64 @@
+@import "colors";
+
+
+$font-h1-size: 4.5em;
+$font-h1-size-xl: 4.0em;
+$font-h1-size-lg: 3.2em;
+$font-h1-size-sm: 2.3em;
+
+$font-h2-size: 2.5em;
+$font-h2-size-xl: 2.2em;
+$font-h2-size-lg: 2em;
+$font-h2-size-md: 1.8em;
+$font-h2-size-sm: 1.4em;
+$font-h2-weight: 800;
+$font-h2-color: rgb(40,40,40);
+$font-h3-size: 1.53em;
+$font-h3-size-xl: 1.4em;
+$font-h3-size-lg: 1.2em;
+$font-h3-size-sm: 1em;
+$font-h3-weight: 700;
+$font-h3-color: black;
+$font-size-p: 1.44em;
+$font-size-p-xl: 1.3em;
+$font-size-p-lg: 1.2em;
+$font-size-p-sm: 0.9em;
+$font-size-p-ventajas-desktop: 1.7em;
+$font-size-p-ventajas-xl: 1.5em;
+$font-size-p-ventajas-lg: 1.2em;
+$font-size-p-ventajas-sm: 1.1em;
+
+$font-size-card-sm: 1em;
+
+$centrar: center;
+
+.h1-styles-desktop{
+    font-size: $font-h1-size;
+    font-weight: 900;
+}
+
+.h2-styles-desktop{
+    font-size: $font-h2-size;
+    color: $font-h2-color;
+    font-weight: $font-h2-weight;
+}
+
+
+
+.h3-styles-desktop{
+    font-size: $font-h3-size;
+    text-align: $centrar;
+    font-weight: $font-h3-weight;
+}
+
+
+.anchor-hover{
+    background-color: $negro;
+    color: $white-ct;
+    border-radius: 5px;
+    transition: .5s all;
+}
+
+.p-styles-desktop{
+    font-size: $font-size-p;
+}

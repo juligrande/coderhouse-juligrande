@@ -10,7 +10,6 @@
     <title>pagina eSports juli</title>
     <link rel="icon" href="../multimedia/img/esports-logo.webp" type="image/png">
     <link rel="stylesheet" href="../css/styles.css">
-    
 </head>
 
 <body>
@@ -18,18 +17,18 @@
         <nav class="BarraDeNavegacion"> 
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../pages/calendario.html">Calendario</a></li>
-                    <li><a href="../pages/posiciones.html">Posiciones</a></li>
-                    <li><a href="../pages/grabaciones.html">Grabaciones</a></li>
-                    <li><a href="../pages/noticias.html">Noticias</a></li>
-                    <li><a href="../pages/formulario.html">Formulario</a></li>
+                    <li><a href="./calendario.html">Calendario</a></li>
+                    <li><a href="./posiciones.html">Posiciones</a></li>
+                    <li><a href="./grabaciones.html">Grabaciones</a></li>
+                    <li><a href="./noticias.html">Noticias</a></li>
+                    <li><a href="./formulario.html">Formulario</a></li>
                 </ul>
         </nav>
     </header>
     <main>
         <div class="fonditoindex">
             <h1 class="">Big eSports</h1>
-            <form class="formulario">
+            <form class="formulario" action="/enviar-formulario" method="POST">
                 <div class="dato dato-nombre">
                     <label for="nombre">Nombre: </label>
                     <input type="text" name="nombre" id="nombre" required>
@@ -47,8 +46,8 @@
                     <input type="email" name="mail" id="mail" required>
                 </div>
                 <div class="dato-terminos">
-                    <label for="acepta">Acepta terminos y condiciones</label>
                     <input type="checkbox" name="acepta" id="acepta" value="si" required>
+                    <label for="acepta">Acepta términos y condiciones</label>
                 </div>
                 <button type="submit">Enviar</button>
             </form>
@@ -67,7 +66,6 @@
             <span>Direccion: Parque Chacabuco 1353 CABA</span>
             <span>Tel: 4534-3728</span>
             <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49993.01614373407!2d-63.675102951367194!3d-38.45155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb93cf22fdef5%3A0xce8c302528132702!2sInfernus%20Esports!5e0!3m2!1ses!2sar!4v1689279699802!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
         </div>
         <div class="redes">
             <h1>Nuestras redes sociales:</h1>
@@ -77,6 +75,6 @@
             <a href="https://twitter.com/"><img src="../multimedia/img/twitter_logo_blue.png.twimg.768.png" alt="twitter" width="50px" height="50px"> </a>
         </div>
     </footer>
-    </body>
+</body>
 
 </html>
