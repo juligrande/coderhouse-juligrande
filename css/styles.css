@@ -855,7 +855,7 @@ h1 {
   .menu-list li {
     margin: 0 15px;
   }
-  
+
   @media (max-width: 768px) {
     .menu-toggle {
       display: block;
