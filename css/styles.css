@@ -753,4 +753,117 @@ h1 {
 .torneitos {
   text-align: center;
 }
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block; 
+    cursor: pointer;
+  }
+   }
+   .BarraDeNavegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  }
+  
+  .menu-icon {
+    display: none; /* Ocultar el ícono del menú en pantallas grandes */
+  }
+  
+  .menu-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu-list li {
+    margin: 0 10px;
+  }
+  
+  /* Media query para mostrar el menú de navegación móvil */
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: block; /* Mostrar el ícono del menú en pantallas pequeñas */
+      cursor: pointer;
+    }
+    
+    .menu-list {
+      display: none; /* Ocultar la lista de menú en pantallas pequeñas */
+      flex-direction: column;
+      background-color: #222;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+    }
+    
+    .menu-list.active {
+      display: flex; /* Mostrar la lista de menú al hacer clic en el ícono */
+    }
+  }
+  .mobile-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+  }
+  
+  .menu-list {
+    list-style: none;
+    display: none; 
+  }
+  
+  .menu-list.active {
+    display: block; 
+  }
+
+.menu-desktop {
+  list-style: none;
+  display: flex;
+}
+
+.menu-desktop li {
+  margin: 0 10px;
+}
+
+.menu-toggle {
+  display: none; 
+  cursor: pointer;
+}
+
+.menu-mobile {
+  list-style: none;
+  display: none; 
+}
+
+.menu-mobile.active {
+  display: block; 
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  }
+  
+  .menu-desktop {
+    display: none; 
+}
+
 /*# sourceMappingURL=styles.css.map */
