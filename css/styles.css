@@ -833,43 +833,7 @@ h1 {
     display: block; 
   }
 /* Estilos generales para el menú de navegación */
-.BarraDeNavegacion {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
-  color: white;
-  padding: 10px;
-}
-
-.menu-toggle {
-  cursor: pointer;
-}
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  margin: 5px auto;
-  transition: 0.4s;
-}
-
-.menu-list {
-  list-style: none;
-  display: flex;
-}
-
-.menu-list li {
-  margin: 0 15px;
-}
-
-/* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
   .menu-list {
     display: none;
     flex-direction: column;
@@ -880,6 +844,7 @@ h1 {
     background-color: #222;
     padding: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1; /* Asegura que el menú esté en el frente */
   }
 
   .menu-list.active {
