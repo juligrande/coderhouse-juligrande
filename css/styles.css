@@ -787,7 +787,7 @@ h1 {
     padding: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1;
-  }
+    }
   }
 
   .menu-toggle:checked + label .bar:nth-child(1) {
@@ -805,4 +805,5 @@ h1 {
   .menu-toggle:checked ~ #menu-list {
     display: flex;
   }
+
 /*# sourceMappingURL=styles.css.map */
