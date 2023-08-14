@@ -512,10 +512,11 @@ img {
   }
 }
 .carousel h1 {
-  color: rgb(255, 3, 58);
+  color: rgb(243, 240, 240);
   text-align: center;
   padding: 30px;
   text-decoration: underline;
+  font-size: 70px;
 }
 
 .row {
@@ -637,4 +638,119 @@ body {
   }
 }
 
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+.BarraDeNavegacion ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #222;
+}
+
+.BarraDeNavegacion li {
+  margin: 0 10px;
+}
+
+.BarraDeNavegacion a {
+  color: white;
+  text-decoration: none;
+}
+
+.fonditoindex {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.video-section {
+  text-align: center;
+}
+
+.torneos-title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.torneos-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.torneo-item {
+  margin-bottom: 20px;
+}
+
+.torneo-item h3 {
+  margin: 0;
+}
+
+.torneo-description {
+  color: #888;
+  margin: 5px 0;
+}
+
+.PiePagina {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+.info, .contactos, .redes {
+  margin-bottom: 20px;
+}
+
+.info img {
+  display: block;
+  margin: 0 auto;
+}
+
+.mapa-wrapper {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.mapa {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+.tarjeta {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.contenido-tarjeta button {
+  background-color: #333;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.contenido-tarjeta button:hover {
+  background-color: #444;
+}
+.torneitos {
+  text-align: center;
+}
 /*# sourceMappingURL=styles.css.map */
