@@ -866,8 +866,13 @@ h1 {
 
 /* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
   .menu-list {
     display: none;
+    flex-direction: column;
     position: absolute;
     top: 60px;
     left: 0;
@@ -879,7 +884,6 @@ h1 {
 
   .menu-list.active {
     display: flex;
-    flex-direction: column;
   }
 
   .menu-toggle.active .bar:nth-child(1) {
@@ -892,6 +896,10 @@ h1 {
 
   .menu-toggle.active .bar:nth-child(3) {
     transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .BarraDeNavegacion {
+    position: relative;
   }
 }
 /*# sourceMappingURL=styles.css.map */
