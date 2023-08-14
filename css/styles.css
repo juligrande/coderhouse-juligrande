@@ -759,82 +759,13 @@ h1 {
     cursor: pointer;
   }
    }
-   .BarraDeNavegacion {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: white;
-    padding: 10px;
-  }
-  
-  .menu-icon {
-    display: none; 
-  }
-  
-  .menu-list {
-    list-style: none;
-    display: flex;
-  }
-  
-  .menu-list li {
-    margin: 0 10px;
-  }
-  
-
-  @media (max-width: 768px) {
-    .menu-icon {
-      display: block; 
-      cursor: pointer;
-    }
-    
-    .menu-list {
-      display: none;
-      flex-direction: column;
-      background-color: #222;
-      position: absolute;
-      top: 50px;
-      left: 0;
-      width: 100%;
-    }
-    
-    .menu-list.active {
-      display: flex; 
-    }
-  }
-  .mobile-menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-  }
-  
-  .menu-toggle {
-    display: flex;
-    flex-direction: column;
+   .menu-toggle {
     cursor: pointer;
-  }
-  
-  .bar {
-    width: 30px;
-    height: 3px;
-    background-color: white;
-    margin: 3px 0;
+    position: relative; /* Agregado para contener el menú dentro de la hamburguesa */
   }
   
   .menu-list {
     list-style: none;
-    display: none; 
-  }
-  
-  .menu-list.active {
-    display: block; 
-  }
-/* Estilos generales para el menú de navegación */
-@media (max-width: 768px) {
-  .menu-list {
     display: none;
     flex-direction: column;
     position: absolute;
@@ -844,27 +775,11 @@ h1 {
     background-color: #222;
     padding: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1; /* Asegura que el menú esté en el frente */
+    z-index: 1;
   }
-
-  .menu-list.active {
+  
+  .menu-toggle.active .menu-list {
     display: flex;
   }
 
-  .menu-toggle.active .bar:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
-  }
-
-  .menu-toggle.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  .menu-toggle.active .bar:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
-  }
-
-  .BarraDeNavegacion {
-    position: relative;
-  }
-}
 /*# sourceMappingURL=styles.css.map */
