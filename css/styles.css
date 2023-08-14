@@ -846,16 +846,16 @@ h1 {
     cursor: pointer;
   }
   
-  .menu-list {
-    list-style: none;
-    display: flex;
-    align-items: center;
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px auto;
+    transition: 0.4s;
   }
   
-  .menu-list li {
-    margin: 0 15px;
-  }
-
+  /* Estilos para pantallas pequeñas */
   @media (max-width: 768px) {
     .menu-toggle {
       display: block;
@@ -874,6 +874,17 @@ h1 {
     .menu-list.active {
       display: flex;
     }
+  
+    .menu-toggle.active .bar:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+  
+    .menu-toggle.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .menu-toggle.active .bar:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
   }
-
 /*# sourceMappingURL=styles.css.map */
