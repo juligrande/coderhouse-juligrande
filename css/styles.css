@@ -152,18 +152,18 @@ ul {
   list-style: none;
 }
 
-.BarraDeNavegacion .desktop-nav{
+.BarraDeNavegacion {
   background-image: url(../multimedia/img/fondo\ negro.jpg);
   width: 100%;
 }
 
-.BarraDeNavegacion .desktop-nav ul {
+.BarraDeNavegacion ul {
   margin: 15px;
   list-style: none;
   display: flex;
 }
 
-.BarraDeNavegacion .desktop-navul li a {
+.BarraDeNavegacion ul li a {
   display: block;
   color: white;
   text-decoration: none;
@@ -577,7 +577,7 @@ body {
     margin: 10px;
     order: -1;
   }
-  .BarraDeNavegacion .desktop-nav ul {
+  .BarraDeNavegacion ul {
     display: none;
   }
   .fondito h1 {
@@ -752,157 +752,85 @@ h1 {
 }
 .torneitos {
   text-align: center;
-  .menu-toggle {
-    display: none;
-  }
 }
-  
+@media (max-width: 768px) {
   .menu-icon {
+    display: block; 
     cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 20px;
-    padding: 0;
-    margin: 0;
-    border: none;
-    background-color: transparent;
   }
-  
-  .bar {
-    width: 30px;
-    height: 3px;
-    background-color: white;
-    transition: 0.4s;
-  }
-  
-  .menu {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 100%;
-    background-color: #222;
-    padding: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease-in-out;
-  }
-  
-  .menu-toggle:checked + .menu-icon .bar:nth-child(1) {
-    transform: rotate(-45deg) translate(-3px, 5px);
-  }
-  
-  .menu-toggle:checked + .menu-icon .bar:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .menu-toggle:checked + .menu-icon .bar:nth-child(3) {
-    transform: rotate(45deg) translate(-3px, -5px);
-  }
-  
-  .menu-toggle:checked ~ .menu {
-    opacity: 1;
-    pointer-events: auto;
-  }
-  
-  .menu li {
-    margin: 10px 0;
-  }
-  
-  .menu a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  /* Estilos para pantallas pequeñas */
-  @media screen and (max-width: 768px) {
-    .BarraDeNavegacion {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .menu-icon {
-      order: 2;
-    }
-  
-    .menu {
-      position: static;
-      width: auto;
-      background-color: transparent;
-      box-shadow: none;
-      opacity: 1;
-      pointer-events: auto;
-      flex-direction: row;
-      top: 0;
-      left: 0;
-      padding: 0;
-    }
-  
-    .menu li {
-      margin: 0 15px;
-    }
-  }
-  .desktop-nav {
-    background-color: #333;
-    padding: 10px 20px;
+   }
+   .BarraDeNavegacion {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .desktop-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .desktop-nav li {
-    margin: 0 10px;
-  }
-  
-  .desktop-nav a {
+    background-color: #333;
     color: white;
-    text-decoration: none;
-  }
-  
-  /* Estilos para la barra de navegación en dispositivos móviles */
-  .mobile-nav {
-    display: none;
-    background-color: #222;
     padding: 10px;
   }
   
-  .mobile-nav ul {
+  .menu-icon {
+    display: none; /* Ocultar el ícono del menú en pantallas grandes */
+  }
+  
+  .menu-list {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
-    flex-direction: column;
   }
   
-  .mobile-nav li {
-    margin: 5px 0;
+  .menu-list li {
+    margin: 0 10px;
   }
   
-  .mobile-nav a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  /* Media query para estilos en dispositivos móviles */
-  @media screen and (max-width: 768px) {
-    .desktop-nav {
-      display: none;
+  /* Media query para mostrar el menú de navegación móvil */
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: block; /* Mostrar el ícono del menú en pantallas pequeñas */
+      cursor: pointer;
     }
-  
-    .mobile-nav {
-      display: block;
+    
+    .menu-list {
+      display: none; /* Ocultar la lista de menú en pantallas pequeñas */
+      flex-direction: column;
+      background-color: #222;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+    }
+    
+    .menu-list.active {
+      display: flex; /* Mostrar la lista de menú al hacer clic en el ícono */
     }
   }
+.mobile-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+}
+
+.menu-list {
+  list-style: none;
+  display: none; /* Ocultar el menú por defecto */
+}
+
+.menu-list.active {
+  display: block; /* Mostrar el menú al hacer clic en el ícono */
+}
+
 /*# sourceMappingURL=styles.css.map */
