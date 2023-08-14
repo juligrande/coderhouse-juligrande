@@ -769,7 +769,7 @@ h1 {
   }
   
   .menu-icon {
-    display: none; /* Ocultar el ícono del menú en pantallas grandes */
+    display: none; 
   }
   
   .menu-list {
@@ -781,15 +781,15 @@ h1 {
     margin: 0 10px;
   }
   
-  /* Media query para mostrar el menú de navegación móvil */
+
   @media (max-width: 768px) {
     .menu-icon {
-      display: block; /* Mostrar el ícono del menú en pantallas pequeñas */
+      display: block; 
       cursor: pointer;
     }
     
     .menu-list {
-      display: none; /* Ocultar la lista de menú en pantallas pequeñas */
+      display: none;
       flex-direction: column;
       background-color: #222;
       position: absolute;
@@ -799,7 +799,7 @@ h1 {
     }
     
     .menu-list.active {
-      display: flex; /* Mostrar la lista de menú al hacer clic en el ícono */
+      display: flex; 
     }
   }
   .mobile-menu {
@@ -832,38 +832,48 @@ h1 {
   .menu-list.active {
     display: block; 
   }
-
-.menu-desktop {
-  list-style: none;
-  display: flex;
-}
-
-.menu-desktop li {
-  margin: 0 10px;
-}
-
-.menu-toggle {
-  display: none; 
-  cursor: pointer;
-}
-
-.menu-mobile {
-  list-style: none;
-  display: none; 
-}
-
-.menu-mobile.active {
-  display: block; 
-}
-
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
+  .BarraDeNavegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
   }
   
-  .menu-desktop {
-    display: none; 
-}
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .menu-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-list li {
+    margin: 0 15px;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    .menu-list {
+      display: none;
+      flex-direction: column;
+      background-color: #222;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+    }
+  
+    .menu-list.active {
+      display: flex;
+    }
+  }
 
 /*# sourceMappingURL=styles.css.map */
